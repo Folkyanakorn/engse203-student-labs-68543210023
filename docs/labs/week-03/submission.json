@@ -1,0 +1,16 @@
+{
+  "week": "week-03",
+  "title": "Responsive Web UI & Form Interaction",
+  "status": "draft",
+  "sourceOrigin": "migrated-repository",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "",
+  "submissionTag": "lab-03-submission-v1",
+  "testStatus": "pass",
+  "notes": "Static site ต้องมี index.html ที่ publish root",
+  "pageUrl": "https://Folkyanakorn.github.io/engse203-student-labs-68543210023/labs/week-03/",
+  "sourceUrl": "https://github.com/Folkyanakorn/engse203-student-labs-68543210023/tree/lab/week-03/labs/week-03/source",
+  "hasPublish": true,
+  "sourceEntries": 10
+}

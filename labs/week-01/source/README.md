@@ -1,0 +1,84 @@
+# ENGSE203 LAB 01 — Developer Environment & GitHub Repository Setup
+
+## ผู้จัดทำ
+
+- ชื่อ-นามสกุล: ญาณากร หวังระบอบ
+- รหัสนักศึกษา: 68543210023
+- ระบบปฏิบัติการที่ใช้: Windows
+
+## วัตถุประสงค์ของงาน
+
+- เพื่อตรวจสอบและเตรียมความพร้อมสำหรับการพัฒนาโปรแกรมให้พร้อมใช้งาน
+
+- เพื่อฝึกฝนการสร้างและตั้งค่า JavaScript , Node.js
+
+- เพื่อทำความเข้าใจและใช้งาน Git / GitHub
+
+## เครื่องมือที่ใช้
+
+- Git และ GitHub
+- WSL2
+- Visual Studio Code
+- Node.js
+- npm
+
+
+## วิธีติดตั้งและรัน
+
+```bash
+# สร้างพื้นที่ทำงานและสร้างโฟลเดอร์โปรเจกต์
+mkdir -p ~/workspace/engse203
+cd ~/workspace/engse203
+mkdir engse203-lab01
+
+# สร้างโฟลเดอร์สำหรับซอร์สโค้ด
+cd engse203-lab01
+npm init -y
+mkdir src
+
+# เปิดโปรเจกต์ใน VS Code
+code .
+
+# สร้างไฟล์ใน src/hello.js
+# เขียนและรันโปรแกรม JavaScript ตามตัวอย่าง
+# เปิดไฟล์ package.json และแก้ส่วน scripts ให้มีคำสั่ง start
+# จากนั้นรันโปรแกรม
+npm run start
+
+```
+
+## โครงสร้างไฟล์
+
+```text
+engse203-lab01/
+├── src/
+│   └── hello.js
+├── package.json
+└── README.md
+```
+
+## หลักฐานผลลัพธ์
+
+```bash
+Hello ญาณากร หวังระบอบ (68543210023) | OS: linux | Node: v24.18.0
+```
+
+## ปัญหาที่พบและวิธีแก้ไข
+
+- ปัญหา:
+    - ไม่สามารถติดตั้ง WSL2 ได้ (Download แล้วค้างอยู่ที่ 0.1)
+- วิธีแก้: 
+    - ใช้คำสั่ง  wsl --update เพื่อบังคับอัปเดตตัวติดตั้ง WSL ให้เป็นเวอร์ชันล่าสุด
+
+## References & AI Assistance
+
+- Source / Documentation:   
+    - https://github.com/se-rmutl/engse203-lab/blob/main/docs/part-1-wsl2-ubuntu-24.04-windows-11.md
+    - https://github.com/se-rmutl/engse203-lab/blob/main/docs/part-2-developer-tools-git-github-vscode.md
+- AI tool used: 
+    - Gemini
+- Used for: 
+    - ตรวจสอบคำสั่งที่ใช้ในการติดตั้ง WSL2 และแก้ปัญหาที่ไม่สามารถติดตั้ง WSL2 ได้
+    - หาวิธีนำรูปภาพเข้าไปใส่ใน README.md
+- My adaptation: 
+    - ศึกษาเนื้อหาคำแนะนำ ทำตามขั้นตอนในเครื่องตนเอง และนำมาปรับแก้เพื่อเขียนอธิบายให้ถูกต้อง

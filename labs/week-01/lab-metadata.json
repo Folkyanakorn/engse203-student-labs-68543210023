@@ -1,0 +1,12 @@
+{
+  "week": "week-01",
+  "title": "Developer Environment & GitHub Repository Setup",
+  "status": "ready",
+  "sourceOrigin": "student-created",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "",
+  "submissionTag": "lab-01-submission-v1",
+  "testStatus": "pass",
+  "notes": "รัน hello.js และตรวจ environment แล้ว"
+}

@@ -1,0 +1,12 @@
+{
+  "week": "week-02",
+  "title": "Modern JavaScript Learning Dashboard",
+  "status": "ready",
+  "sourceOrigin": "student-created",
+  "originalRepoUrl": "",
+  "originalCommit": "",
+  "pullRequestUrl": "",
+  "submissionTag": "lab-02-submission-v1",
+  "testStatus": "pass",
+  "notes": "นำ Vite build output ที่มี index.html เข้า publish/"
+}
