@@ -1,0 +1,76 @@
+# B1 · บันทึกการแก้บั๊ก 6 จุด — สอบกลางภาค ENGSE203
+
+**ชื่อ–นามสกุล:** ญาณากร หวังระบอบ **รหัส:** 68543210023-6 **Sec:** 2 **ชุด:** B
+
+---
+
+## วิธีกรอก (อ่านก่อนเริ่ม)
+
+กรอกให้ครบ **ทั้ง 6 บั๊ก** · แต่ละบั๊กเขียน 3 อย่างด้วย **คำของตัวเอง** (จะถูกสุ่มถามใน oral)
+
+| คอลัมน์ | ใส่อะไร | ตัวอย่างสิ่งที่เขียน *(บั๊กสมมติ)* |
+|---|---|---|
+| **ไฟล์ : บรรทัด** | ไฟล์ที่แก้ + เลขบรรทัด | `Foo.jsx : 12` |
+| **สาเหตุ** | **ทำไม** มันทำงานผิด (ไม่ใช่แค่ "พิมพ์ผิด") | "ใส่วงเล็บท้ายชื่อฟังก์ชัน เลยถูกเรียกทันทีตอน render" |
+| **แก้อย่างไร** | เปลี่ยน**จากอะไร**เป็น**อะไร** | "เอาวงเล็บออก จาก `onClick={fn()}` เป็น `onClick={fn}`" |
+
+> เคล็ด: เลขบรรทัดดูได้จากแถบซ้ายใน VS Code หรือจากข้อความ error ใน Console (เช่น `RequestList.jsx:9`)
+
+---
+
+## ตัวอย่างรูปแบบการเขียน
+
+> ⚠️ นี่คือ **บั๊กสมมติเพื่อสอนวิธีเขียน** — **ไม่ใช่** บั๊กจริงในข้อสอบ
+
+| อาการ | ไฟล์ : บรรทัด | สาเหตุ | แก้อย่างไร |
+|---|---|---|---|
+| กดปุ่มไม่ได้ แต่พอโหลดหน้าเสร็จฟังก์ชันทำงานเองทันที | `Foo.jsx : 12` | เขียน `onClick={handleClick()}` มีวงเล็บ → JavaScript **เรียกฟังก์ชันทันที**ตอน render แล้วเอาค่าที่ return มาเป็น handler | เอาวงเล็บออก เป็น `onClick={handleClick}` (ส่งตัวฟังก์ชัน ไม่ใช่ผลลัพธ์) |
+
+---
+
+## บันทึกของฉัน — กรอกทั้ง 6 บั๊ก
+
+B1
+
+| # | อาการ (ให้มาแล้ว) | ไฟล์ : บรรทัด | สาเหตุ (ทำไมผิด) | แก้อย่างไร |
+|---|---|---|---|---|
+| 1 | Console เตือนสีเหลืองเรื่องรายการ (list) ที่แผงสรุป | ไฟล์ SummaryPanel.jsx บรรทัดที่ 12 | ไม่ได้ใส่ key ตรง article |   ทำการใส่ key={key} <article key={key} className="summary-card"> |
+| 2 | ตัวเลข "เสร็จสิ้น" ในแผงสรุปไม่ตรงกับที่เห็นจริง | ไฟล์ DashboardPage.jsx  บรรทัด 46| สาเหตุคือ ใส่ completed เป็น in-progress  | แก้ เป็น completed  |
+| 3 | กดตัวกรองสถานะใด ๆ แล้วผลไม่เปลี่ยน (เหมือนกรองไม่ทำงาน) | บรรทัดที่55 ใน Dashboard.jsx | เพราะ filteredrequests มันเป็น pending | แก้ให้เป็น statusfilter แบบนี้ requests.filter((request) => request.status === statusFilter); |
+| 4 | เปลี่ยน URL `REQ-101` → `REQ-102` แล้วข้อมูลไม่เปลี่ยน | RequestDetailPage.jsx บรรทัด 28 | useEffect ใน requestdetailpage.jsx ว่างเปล่า | [requestId, reloadKey] |
+| 5 | กด "ลบ" แล้วการ์ดหาย แต่ตัวเลขในแผงสรุปไม่ลด | ไฟล์ DashboardPage.jsx  บรรทัด 46| สาเหตุคือ  ลืมใส่ request ตรง ท้ายสุด |  ใส่ request เข้าไป |
+| 6 | กด "ลบ" แล้วหน้าพัง/ว่างเปล่า | dashboard.jsx บรรทัด 64 | ลืมใส่ await | ใส่ await |
+
+---
+B2
+
+CP B2.1
+เพิ่ม state // const [searchText, setSearchText] = useState('');
+
+แก้ dashboard จาก 
+    const filteredRequests = statusFilter === 'all'
+    ? requests
+    : requests.filter((request) => request.status === statusFilter);
+    
+    ให้เป็น
+    const filteredRequests = requests.filter((request) => {
+    const matchesStatus = statusFilter === 'all' || request.status === statusFilter;
+    const matchesSearch = searchText === '' ||
+      request.requestType?.toLowerCase().includes(searchText.toLowerCase()) ||
+      request.location?.toLowerCase().includes(searchText.toLowerCase());
+
+    return matchesStatus && matchesSearch;
+  });
+  และเพิ่ม input ข้างล่างสุด 
+ /* <input
+ /*             type="text"
+   /*           placeholder="ค้นหาจากประเภทหรือสถานที่"
+     /*         value={searchText}
+       /*       onChange={(e) => setSearchText(e.target.value)}
+         /*   />
+
+## เช็คก่อนส่ง
+
+- [/] กรอกครบทั้ง 6 บั๊ก (ไฟล์:บรรทัด · สาเหตุ · แก้อย่างไร)
+- [/] เขียนด้วยคำของตัวเอง ไม่ใช่ก๊อปคำอธิบายจาก AI มาตรง ๆ
+- [/] ยืนยันแล้วว่าอาการทั้ง 6 หายจริงหลังแก้ (`npm run dev` แล้วลองทีละอาการ)
