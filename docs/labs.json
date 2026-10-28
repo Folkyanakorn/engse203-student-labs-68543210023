@@ -2,8 +2,8 @@
   {
     "week": "week-01",
     "title": "Developer Environment & GitHub Repository Setup",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -18,8 +18,8 @@
   {
     "week": "week-02",
     "title": "Modern JavaScript Learning Dashboard",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -29,13 +29,13 @@
     "pageUrl": "https://Folkyanakorn.github.io/engse203-student-labs-68543210023/labs/week-02/",
     "sourceUrl": "https://github.com/Folkyanakorn/engse203-student-labs-68543210023/tree/lab/week-02/labs/week-02/source",
     "hasPublish": true,
-    "sourceEntries": 10
+    "sourceEntries": 8
   },
   {
     "week": "week-03",
     "title": "Responsive Web UI & Form Interaction",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -45,13 +45,13 @@
     "pageUrl": "https://Folkyanakorn.github.io/engse203-student-labs-68543210023/labs/week-03/",
     "sourceUrl": "https://github.com/Folkyanakorn/engse203-student-labs-68543210023/tree/lab/week-03/labs/week-03/source",
     "hasPublish": true,
-    "sourceEntries": 10
+    "sourceEntries": 8
   },
   {
     "week": "week-04",
     "title": "React Campus Service Request",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -61,13 +61,13 @@
     "pageUrl": "https://Folkyanakorn.github.io/engse203-student-labs-68543210023/labs/week-04/",
     "sourceUrl": "https://github.com/Folkyanakorn/engse203-student-labs-68543210023/tree/lab/week-04/labs/week-04/source",
     "hasPublish": true,
-    "sourceEntries": 12
+    "sourceEntries": 10
   },
   {
     "week": "week-05",
     "title": "React Routing Data Fetching Mini App",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -77,13 +77,13 @@
     "pageUrl": "https://Folkyanakorn.github.io/engse203-student-labs-68543210023/labs/week-05/",
     "sourceUrl": "https://github.com/Folkyanakorn/engse203-student-labs-68543210023/tree/lab/week-05/labs/week-05/source",
     "hasPublish": true,
-    "sourceEntries": 12
+    "sourceEntries": 10
   },
   {
     "week": "week-06",
     "title": "Node.js / Express API Foundation",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -98,8 +98,8 @@
   {
     "week": "week-07",
     "title": "RESTful API, Validation & Error Handling",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -114,7 +114,7 @@
   {
     "week": "week-09",
     "title": "SQL-Fundamentals",
-    "status": "draft",
+    "status": "ready",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -130,8 +130,8 @@
   {
     "week": "week-10",
     "title": "Node-Database",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -146,8 +146,8 @@
   {
     "week": "week-11",
     "title": "Fullstack-Integration",
-    "status": "draft",
-    "sourceOrigin": "migrated-repository",
+    "status": "ready",
+    "sourceOrigin": "student-created",
     "originalRepoUrl": "",
     "originalCommit": "",
     "pullRequestUrl": "",
@@ -162,7 +162,7 @@
   {
     "week": "week-12",
     "title": "Testing & Debugging",
-    "status": "draft",
+    "status": "ready",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
@@ -178,7 +178,7 @@
   {
     "week": "week-13",
     "title": "Quality & Security",
-    "status": "draft",
+    "status": "ready",
     "sourceOrigin": "course-starter",
     "originalRepoUrl": "",
     "originalCommit": "",
