@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     region: singapore
-    rootDir: labs/week-11-fullstack-integration/lab11/starter/
+    rootDir: labs/week-11/source
     buildCommand: npm install && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
