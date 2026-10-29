@@ -1,11 +1,11 @@
 {
   "week": "week-13",
   "title": "Quality & Security",
-  "status": "ready",
+  "status": "submitted",
   "sourceOrigin": "course-starter",
   "originalRepoUrl": "",
   "originalCommit": "",
-  "pullRequestUrl": "",
+  "pullRequestUrl": "https://github.com/Folkyanakorn/engse203-student-labs-68543210023/pull/17",
   "submissionTag": "lab-13-submission-v1",
   "testStatus": "pass",
   "notes": "check-week13 ผ่าน 27/27 (รวม Challenge) · api test 94 ข้อ · ใช้ Claude ช่วย (ดู source/AI_USAGE.md) · หน้า login ฝั่ง React ยังไม่ได้ทำ",
